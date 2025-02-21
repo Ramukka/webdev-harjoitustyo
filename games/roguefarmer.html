@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rogue Farmer</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Ramukka's Portfolio</h1>
+      </div>
+
+      <div class="navbar">
+        <a href="../index.html">
+            /home/</a>
+        <a href="../games.html" class="active">
+            /games/</a>
+            <!-- here on mobile-->
+            <div class="subnavbar-mobile">
+              <a href="barista.html">
+                Doomsday Barista/</a>
+              <a href="sysimetsa.html">
+                Sysimetsä/</a>
+              <a href="roguefarmer.html" class="active">
+                Rogue Farmer/</a>
+              <a href="noir.html">
+                Covered In Noir/</a>
+              <a href="tuliprush.html">
+                Tulip Rush/</a>
+          </div>
+        <a href="../quiz.html">
+            /quiz/</a>
+        <a href="../linux.html">
+            /linux/</a>
+        <a href="../contact.html">
+            /contact/</a>
+    </div>
+
+    <!-- here on pc-->
+    <div class="subnavbar-desktop">
+        <a href="barista.html">
+          Doomsday Barista/</a>
+        <a href="sysimetsa.html">
+          Sysimetsä/</a>
+        <a href="roguefarmer.html" class="active">
+          Rogue Farmer/</a>
+        <a href="noir.html">
+          Covered In Noir/</a>
+        <a href="tuliprush.html">
+          Tulip Rush/</a>
+    </div>
+
+        <div class="main">
+          <h2>Rogue Farmer</h2>
+            Year: 2024<br>
+            Engine: Unity<br>
+            Platform: Linux, Windows<br>
+            My part: everything<br><br>
+              <p>Rogue Farmer is a demo state solo project by me. I made it to raise my old school grades in early 2024.<br>
+                The game's idea is to farm potatoes and defend yourself and your crop from the waves of ratmen who come at night.<br>
+                I did everything myself. the textures, 3D-models, programming, music, only for sound effects I used edited CC0 licensed sounds from freesound.org<br>
+                The name comes from the Roguelike game genre, The game is in a very unfinished state and would have featured some roguelike elements like item upgrades.
+              </p>
+          <h3>Download</h3>
+          <p>The game can be downloaded for Linux and Windows from the itch.io page.<br>note: the game is in really rough state</p>
+          <a href="https://ramukka.itch.io/rogue-farmer?secret=XMGmSkTyQz9S1U4B2dt22gm20", target=”_blank”><img src="img/itch.png"></a><br>
+
+          <h3>Gallery</h3>
+          <p>Click to open images</p>
+          <div class="gallery">
+            <div class="gallery-item">
+                <img src="img/rogue/rogue1.jpg" alt="Photo 1" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+              <img src="img/rogue/rogue2.jpg" alt="Photo 1" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+              <img src="img/rogue/rogue3.jpg" alt="Photo 1" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+              <img src="img/rogue/rogue4.jpg" alt="Photo 1" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+              <img src="img/rogue/rogue5.jpg" alt="Photo 1" onclick="openLightbox(this)">
+            </div>
+          </div>
+             <!-- Lightbox container -->
+          <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <span class="close" onclick="closeLightbox()">×</span>
+            <img id="lightbox-img" src="" alt="Lightbox Image">
+          </div>
+
+        </div>
+
+          <!-- Footer -->
+          <div class="footer">
+            <p class="note">&copy; 2025 Rami Niemenmaa</p>
+          </div>
+    
+          <script src="gallery.js"></script>  
+    
+</body>
+</html>

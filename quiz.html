@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="quiz.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Ramukka's Portfolio</h1>
+      </div>
+
+      <div class="navbar">
+        <a href="index.html">
+            /home/</a>
+        <a href="games.html">
+            /games/</a>
+        <a href="quiz.html" class="active">
+            /quiz/</a>
+        <a href="linux.html">
+            /linux/</a>
+        <a href="contact.html">
+            /contact/</a>
+    </div>
+
+        <div class="main">
+          <h2>Unity Quiz</h2>
+              <p>here is a quiz to test your knowledge about Unity game engine!</p>
+                <br>
+            
+            
+            <form id="unity1">
+                <p>1. In a script, you should put <code>GameObject.GetComponent&lt;Rigidbody&gt;()</code> in:</p>
+              
+                <input type="radio" id="op1" name="op" value="correct">
+                <label for="op1">The <code>Start()</code> method.</label><br>
+              
+                <input type="radio" id="op2" name="op" value="incorrect">
+                <label for="op2">The <code>Update()</code> method.</label><br>
+              
+                <input type="radio" id="op3" name="op" value="incorrect">
+                <label for="op3">The <code>FixedUpdate()</code> method.</label><br>
+                <br>
+                <span class="result">&nbsp;</span>
+              </form>
+
+              <form id="unity2">
+                <br>
+                <p>2. How is <code>FixedUpdate()</code> different from <code>Update()</code>?</p>
+              
+                <input type="radio" id="op1" name="op" value="incorrect">
+                <label for="op1">The <code>FixedUpdate()</code> is called before <code>Update()</code></label><br>
+              
+                <input type="radio" id="op2" name="op" value="correct">
+                <label for="op2">The <code>FixedUpdate()</code> updates for every physics tick.</label><br>
+              
+                <input type="radio" id="op3" name="op" value="incorrect">
+                <label for="op3"><code>FixedUpdate()</code> is called every frame.</label><br>
+                <br>
+                <span class="result">&nbsp;</span>
+              </form>
+
+              <form id="unity3">
+                <br>
+                <p>3. In ECS (Entity Component System), what best describes an Entity?</p>
+              
+                <input type="radio" id="op1" name="op" value="incorrect">
+                <label for="op1">A monolithic object that contains both behavior and data.</code></label><br>
+              
+                <input type="radio" id="op2" name="op" value="correct">
+                <label for="op2">A lightweight identifier used to reference a collection of components.</label><br>
+              
+                <input type="radio" id="op3" name="op" value="incorrect">
+                <label for="op3">A specialized prefab for spawning game objects with pre-set logic.</label><br>
+                <br>
+                <span class="result">&nbsp;</span>
+              </form>
+
+              <form id="unity4">
+                <br>
+                <p>4. In Unity's Animator system, what is the primary role of "Root Motion"?</p>
+              
+                <input type="radio" id="op1" name="op" value="incorrect">
+                <label for="op1">It adjusts the playback speed of animations automatically.</label><br>
+              
+                <input type="radio" id="op2" name="op" value="incorrect">
+                <label for="op2">It controls the transitions between animation states based on conditions.</label><br>
+              
+                <input type="radio" id="op3" name="op" value="correct">
+                <label for="op3">It drives the character's movement by using the animation's positional data.</label><br>
+                <br>
+                <span class="result">&nbsp;</span>
+              </form>
+
+
+              <br>
+              <button type="button" onclick="checkUnity()">Check</button> <button type="button" onclick="resetAllForms()">Reset</button>
+              
+
+              <div id="progress-container">
+                <div id="progress-bar-wrapper">
+                  <div id="progress-bar-fill">
+                    <span id="points">Results: 0/4 correct</span>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p class="note">&copy; 2025 Rami Niemenmaa</p>
+      </div>
+    
+</body>
+</html>

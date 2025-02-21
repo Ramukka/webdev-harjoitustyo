@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doomsday Barista</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Ramukka's Portfolio</h1>
+      </div>
+
+      <div class="navbar">
+        <a href="../index.html">
+            /home/</a>
+        <a href="../games.html" class="active">
+            /games/</a>
+            <!-- here on mobile-->
+            <div class="subnavbar-mobile">
+              <a href="barista.html" class="active">
+                Doomsday Barista/</a>
+              <a href="sysimetsa.html">
+                Sysimetsä/</a>
+              <a href="roguefarmer.html">
+                Rogue Farmer/</a>
+              <a href="noir.html">
+                Covered In Noir/</a>
+              <a href="tuliprush.html">
+                Tulip Rush/</a>
+          </div>
+        <a href="../quiz.html">
+            /quiz/</a>
+        <a href="../linux.html">
+            /linux/</a>
+        <a href="../contact.html">
+            /contact/</a>
+    </div>
+
+    <!-- here on pc-->
+    <div class="subnavbar-desktop">
+        <a href="barista.html" class="active">
+          Doomsday Barista/</a>
+        <a href="sysimetsa.html">
+          Sysimetsä/</a>
+        <a href="roguefarmer.html">
+          Rogue Farmer/</a>
+        <a href="noir.html">
+          Covered In Noir/</a>
+        <a href="tuliprush.html">
+          Tulip Rush/</a>
+    </div>
+
+        <div class="main">
+          <h2>Doomsday Barista</h2>
+              Year: 2019<br>
+              Engine: Adobe Animate<br>
+              Platform: Android<br>
+              My part: programming and game desing<br><br>
+              <p>Doomsday Barista is a game we made during the first year of our IT studies at Vuoksi in early 2019. It was created in about two months with Adobe Animate. I was responsible for
+                all the programming, had a lot of practice for ActionScript3. We are planning on making this a full game someday Using unity.<br>
+                The game has had a great legacy and the Gameschool banners etc. still have this game's graphics.<br><br>
+                The game takes place in a post apocalyptic world. You are a hipster who found out about this ancient drink called coffee, and drives around the wasteland serving coffee to the people.<br>
+                But in the wasteland an another beverage has a great foothold. Soon the boss of the Earl Grey Gang will find out what his subordinates have been drinking...
+              </p>
+          <h3>Download</h3>
+          <p>Installing the game requires you to allow Installing from unknown sources. The phone may warn you about potential risks, tap "install anyway" etc.</p>
+          <button onclick="window.open('https://drive.google.com/uc?export=download&id=1FDPHAE4xAnP6ueRAWXjti2wlYB5geTzK', '_blank')">Download</button> Doomsday_Barista_Demo.apk (32MB)
+
+          <h3>Gallery</h3>
+          <p>Click to open images</p>
+          <div class="gallery">
+            <div class="gallery-item">
+                <img src="img/barista/barista-screenshot1.jpg" alt="Photo 1" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="img/barista/barista2.jpg" alt="Photo 2" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+              <img src="img/barista/barista3.jpg" alt="Photo 3" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+              <img src="img/barista/barista4.jpg" alt="Photo 4" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+              <img src="img/barista/barista5.jpg" alt="Photo 5" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+              <img src="img/barista/barista6.jpg" alt="Photo 6" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+              <img src="img/barista/barista7.jpg" alt="Photo 7" onclick="openLightbox(this)">
+          </div>
+          </div>
+             <!-- Lightbox container -->
+          <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <span class="close" onclick="closeLightbox()">×</span>
+            <img id="lightbox-img" src="" alt="Lightbox Image">
+          </div>
+
+        </div>
+
+          <!-- Footer -->
+          <div class="footer">
+            <p class="note">&copy; 2025 Rami Niemenmaa</p>
+          </div>
+    
+          <script src="gallery.js"></script>  
+    
+</body>
+</html>

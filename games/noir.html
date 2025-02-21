@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covered In Noir</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Ramukka's Portfolio</h1>
+      </div>
+
+      <div class="navbar">
+        <a href="../index.html">
+            /home/</a>
+        <a href="../games.html" class="active">
+            /games/</a>
+            <!-- here on mobile-->
+            <div class="subnavbar-mobile">
+              <a href="barista.html">
+                Doomsday Barista/</a>
+              <a href="sysimetsa.html">
+                Sysimetsä/</a>
+              <a href="roguefarmer.html">
+                Rogue Farmer/</a>
+              <a href="noir.html" class="active">
+                Covered In Noir/</a>
+              <a href="tuliprush.html">
+                Tulip Rush/</a>
+          </div>
+        <a href="../quiz.html">
+            /quiz/</a>
+        <a href="../linux.html">
+            /linux/</a>
+        <a href="../contact.html">
+            /contact/</a>
+    </div>
+
+    <!-- here on pc-->
+    <div class="subnavbar-desktop">
+        <a href="barista.html">
+          Doomsday Barista/</a>
+        <a href="sysimetsa.html">
+          Sysimetsä/</a>
+        <a href="roguefarmer.html">
+          Rogue Farmer/</a>
+        <a href="noir.html" class="active">
+          Covered In Noir/</a>
+        <a href="tuliprush.html">
+          Tulip Rush/</a>
+    </div>
+
+        <div class="main">
+          <h2>Covered In Noir</h2>
+            Year: 2024<br>
+            Engine: Unity<br>
+            Platform: Windows<br>
+            My part: Music, Sound design, 3D-modeling<br><br>
+              <p>Covered In Noir is a gamejam game we made in four days with a team for Finnish College Jam #6 in the spring of 2024. The jam theme was "Why were you late?"<br>
+                In the game you are a detective trying to solve what happened in a trashed hotel room. Find the clues and piece the story together.<br>
+                This time I took a break from being responsible for programming, and mostly concentrated on audio. I composed the music and made most of the sound effects from scratch.
+              </p>
+          <h3>Download</h3>
+          <p>The game can be downloaded for Windows from the itch.io page.</p>
+          <a href="https://wilzyk.itch.io/covered-in-noir", target=”_blank”><img src="img/itch.png"></a><br>
+
+          <h3>Gallery</h3>
+          <p>Click to open images</p>
+          <div class="gallery">
+            <div class="gallery-item">
+                <img src="img/noir/noir1.jpg" alt="Photo 1" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+              <img src="img/noir/noir2.jpg" alt="Photo 1" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+              <img src="img/noir/noir3.jpg" alt="Photo 1" onclick="openLightbox(this)">
+            </div>
+          </div>
+             <!-- Lightbox container -->
+          <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <span class="close" onclick="closeLightbox()">×</span>
+            <img id="lightbox-img" src="" alt="Lightbox Image">
+          </div>
+
+        </div>
+
+          <!-- Footer -->
+          <div class="footer">
+            <p class="note">&copy; 2025 Rami Niemenmaa</p>
+          </div>
+    
+          <script src="gallery.js"></script>  
+    
+</body>
+</html>

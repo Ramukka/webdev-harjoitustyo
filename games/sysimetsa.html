@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sysimetsä</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Ramukka's Portfolio</h1>
+      </div>
+
+      <div class="navbar">
+        <a href="../index.html">
+            /home/</a>
+        <a href="../games.html" class="active">
+            /games/</a>
+            <!-- here on mobile-->
+            <div class="subnavbar-mobile">
+              <a href="barista.html">
+                Doomsday Barista/</a>
+              <a href="sysimetsa.html" class="active">
+                Sysimetsä/</a>
+              <a href="roguefarmer.html">
+                Rogue Farmer/</a>
+              <a href="noir.html">
+                Covered In Noir/</a>
+              <a href="tuliprush.html">
+                Tulip Rush/</a>
+          </div>
+        <a href="../quiz.html">
+            /quiz/</a>
+        <a href="../linux.html">
+            /linux/</a>
+        <a href="../contact.html">
+            /contact/</a>
+    </div>
+
+    <!-- here on pc-->
+    <div class="subnavbar-desktop">
+        <a href="barista.html">
+          Doomsday Barista/</a>
+        <a href="sysimetsa.html" class="active">
+          Sysimetsä/</a>
+        <a href="roguefarmer.html">
+          Rogue Farmer/</a>
+        <a href="noir.html">
+          Covered In Noir/</a>
+        <a href="tuliprush.html">
+          Tulip Rush/</a>
+    </div>
+
+        <div class="main">
+          <h2>Sysimetsä</h2>
+              Year: 2020<br>
+              Engine: Unity<br>
+              Platform: Windows, WebGL<br>
+              My part: programming, game design, 3D-modeling<br><br>
+              <p>Sysimetsä is our team's final year project which we made for Kauhajoki Seura ry.<br>
+                It is a simple sidescroller game where you control a small spirit who is wandering through the forests of Kauhajoki area.<br>
+                The idea of the project was to show National parks and other nature spots in kauhajoki, mainly Lauhavuori national park, Kauhaneva and Kammikylä.
+              </p>
+          <h3>Download</h3>
+          <p>You can download the game's english standalone version (for Windows) from the game's itch.io page. Or play the WebGL version on kauhajoki.net/pelit</p>
+          <a href="https://juunas.itch.io/sysimetsa", target=”_blank”><img src="img/itch.png"></a><br>
+          <button onclick="window.open('https://kauhajoki.net/sysimetsa/', '_blank')">Play WebGL</button> works best on Google Chrome
+
+
+          <h3>Gallery</h3>
+          <p>Click to open images</p>
+          <div class="gallery">
+            <div class="gallery-item">
+                <img src="img/sysimetsa/sysimetsa1.png" alt="Photo 1" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="img/sysimetsa/sysimetsa2.png" alt="Photo 2" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+              <img src="img/sysimetsa/sysimetsa3.png" alt="Photo 3" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+              <img src="img/sysimetsa/sysimetsa4.png" alt="Photo 4" onclick="openLightbox(this)">
+            </div>
+          </div>
+             <!-- Lightbox container -->
+          <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <span class="close" onclick="closeLightbox()">×</span>
+            <img id="lightbox-img" src="" alt="Lightbox Image">
+          </div>
+
+        </div>
+
+          <!-- Footer -->
+          <div class="footer">
+            <p class="note">&copy; 2025 Rami Niemenmaa</p>
+          </div>
+    
+          <script src="gallery.js"></script>  
+    
+</body>
+</html>

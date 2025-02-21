@@ -1,0 +1,338 @@
+/*
+* The styling is based on Solarized Dark by Ethan Schoonover
+* https://ethanschoonover.com/solarized/
+*/
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family:'Courier New', Courier, monospace;
+    background-color: #002b36;
+    color: #93a1a1;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  .main {
+    flex: 70%;
+    background-color: #073642;
+    padding: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .header {
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: left;
+    background: #002b36 ;
+    color: #93a1a1;
+  }
+  
+  .header h1{
+    font-size: 24px;
+  }
+
+  .footer {
+    padding: 1px;
+    text-align: center;
+    background: #073642;
+    margin-top: 5px;
+  }
+  
+  .note {
+    font-style: italic;
+    font-size: 14px;
+  }
+
+/*
+* Button styling
+*/
+
+  button {
+    padding: 2px 5px;
+    background-color: #002b36;
+    color: #657b83;
+    border: 2px solid #586e75;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  button:hover {
+    background-color: #073642;
+    color: #93a1a1;
+  }
+
+  button:disabled {
+    color: #657b83;
+    background-color: #586e75;
+    border: 2px solid #657b83;
+    pointer-events: none;
+  }
+  
+ /*
+ * Radio button styling
+ */ 
+
+  input[type="radio"] {
+    appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 2px solid #268bd2;
+    background-color: #073642;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  input[type="radio"]:checked {
+    background-color: #268bd2;
+    border-color: #268bd2;
+  }
+
+  input[type="radio"]:disabled {
+    border-color: #586e75;
+    opacity: 0.7;
+  }
+
+/*
+* Progress bar and points text styling
+*/
+  #progress-container {
+    padding: 10px;
+  }
+
+  #progress-bar-wrapper {
+    width: 100%;
+    height: 30px;
+    background-color: #002b36;
+    border-radius: 0;
+    overflow: hidden;
+  }
+
+#progress-bar-fill {
+    height: 100%;
+    background-color: #268bd2;
+    width: 0%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    transition: width 0.5s ease-in-out;
+  }
+
+  #points {
+    color: whitesmoke;
+    font-size: 18px;
+    padding-left: 5px;
+    transform: translateX(+50%);
+    z-index: 1;
+
+}
+
+/*
+* Navbar and sub navbar styling
+*/
+  
+  .navbar {
+    display: flex;
+    background-color: #073642;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  .navbar a {
+    color: #93a1a1;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .navbar a:hover {
+    background-color: #586e75;
+    color: whitesmoke;
+    text-decoration:underline;
+  }
+
+  .navbar a.active {
+    color: whitesmoke;
+    text-decoration:underline;
+  }
+
+  .subnavbar-desktop {
+    display: flex;
+    background-color: #073642;
+    width:fit-content;
+    margin-left: 50px;
+  }
+
+  .subnavbar-desktop a {
+    color: #93a1a1;
+    padding: 10px 10px;
+    text-decoration: none;
+    text-align:left;
+    font-size: 12px;
+  }
+
+  .subnavbar-desktop a:hover {
+    background-color: #586e75;
+    color: whitesmoke;
+    text-decoration:underline;
+  }
+
+  .subnavbar-desktop a.active {
+    color: whitesmoke;
+    text-decoration:underline;
+  }
+
+  .subnavbar-mobile {
+    display: none;
+    flex-direction: column;
+    background-color: #002b36;
+  }
+
+  .subnavbar-mobile a {
+    color: #93a1a1;
+    padding: 10px 10px;
+    text-decoration: none;
+    text-align:center;
+    font-size: 12px;
+  }
+
+  .subnavbar-mobile a:hover {
+    background-color: #586e75;
+    color: whitesmoke;
+    text-decoration:underline;
+  }
+
+  .subnavbar-mobile a.active {
+    color: whitesmoke;
+    text-decoration:underline;
+  }
+  
+/*
+* Styling for the games page images
+*/
+
+  .med-img {
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+  }
+
+  .small-img {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+  }
+  
+.imageflex { display:inline-flexbox; }
+.imageflexcontent { margin: 5px; }
+
+/*
+* Link styling for main class
+*/
+
+.main a {
+  color: #268bd2;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.main a:hover {
+  color: #6c71c4;
+  background-color: #073642;
+  text-decoration: underline;
+}
+
+.main a:focus {
+  outline: 2px solid #b58900;
+  outline-offset: 2px;
+}
+
+/*
+* Styling for headings
+*/
+
+h1 {
+  color: #268bd2;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: #b58900;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+h3 {
+  color: #6c71c4;
+  font-weight: bold;
+}
+
+/*
+* Social link styling
+*/
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  display: inline-block;
+  text-decoration: none;
+  width: 40px;
+  height: auto;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-icon img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.3);
+}
+
+.social-icon:hover img {
+  opacity: 1.0;
+}
+
+.social-icon:active {
+  transform: scale(0.95); /* Shrink the icon slightly when clicked */
+}
+
+/*
+* For mobile platforms
+*/
+
+  
+  @media screen and (max-width: 1024px) {
+    .navbar {  
+      flex-direction: column;
+      position: static;
+    }
+
+    .subnavbar-desktop {
+      display: none;
+    }
+
+    .subnavbar-mobile {
+      display: flex;
+    }
+  }
